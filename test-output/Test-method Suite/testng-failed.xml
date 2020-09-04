@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Test-method Suite]" parallel="classes">
+  <test thread-count="2" name="Test-method test(failed)" parallel="classes">
+    <classes>
+      <class name="com.endava.tests.BasketTest">
+        <methods>
+          <include name="addToBasket"/>
+          <include name="beforeTest"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- com.endava.tests.BasketTest -->
+      <class name="com.endava.tests.SearchProductTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="after"/>
+          <include name="setPrices"/>
+        </methods>
+      </class> <!-- com.endava.tests.SearchProductTest -->
+    </classes>
+  </test> <!-- Test-method test(failed) -->
+</suite> <!-- Failed suite [Test-method Suite] -->
