@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
-              <span class="suite-name border-failed">Command line suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Test_method_Suite">
+              <span class="suite-name border-failed">Test-method Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Command_line_suite">
-                    <span>[unset file name]</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Test_method_Suite">
+                    <span>C:\Users\lcastillo\eclipse-workspace\Ebay-challenge\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Command_line_suite">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" class="navigator-link " panel-name="testlist-Test_method_Suite">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Command_line_suite">
+                  <a href="#" class="navigator-link " panel-name="group-Test_method_Suite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Command_line_suite">
+                  <a href="#" class="navigator-link " panel-name="times-Test_method_Suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Command_line_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Test_method_Suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Command_line_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Test_method_Suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Command_line_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Test_method_Suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,40 +91,55 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,  2 skipped,  </span>
+                    <span class="method-stats">6 methods, 3 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
                     <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
-                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Test_method_Suite" class="hide-methods failed suite-Test_method_Suite"> (hide)</a> <!-- hide-methods failed suite-Test_method_Suite -->
+                      <a href="#" panel-name="suite-Test_method_Suite" class="show-methods failed suite-Test_method_Suite"> (show)</a> <!-- show-methods failed suite-Test_method_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Command_line_suite">
+                    <div class="method-list-content failed suite-Test_method_Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.endava.tests.BasketTest" hash-for-method="addToBasket">addToBasket</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_method_Suite" title="com.endava.tests.BasketTest" hash-for-method="addToBasket">addToBasket</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_method_Suite" title="com.endava.tests.SearchProductTest" hash-for-method="setPrices">setPrices</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_method_Suite" title="com.endava.tests.SearchProductTest" hash-for-method="setPrices">setPrices</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Test_method_Suite -->
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods skipped suite-Command_line_suite"> (hide)</a> <!-- hide-methods skipped suite-Command_line_suite -->
-                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods skipped suite-Command_line_suite"> (show)</a> <!-- show-methods skipped suite-Command_line_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Test_method_Suite" class="hide-methods passed suite-Test_method_Suite"> (hide)</a> <!-- hide-methods passed suite-Test_method_Suite -->
+                      <a href="#" panel-name="suite-Test_method_Suite" class="show-methods passed suite-Test_method_Suite"> (show)</a> <!-- show-methods passed suite-Test_method_Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Command_line_suite">
+                    <div class="method-list-content passed suite-Test_method_Suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.endava.tests.SearchProductTest" hash-for-method="applyFilter">applyFilter</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_method_Suite" title="com.endava.tests.BasketTest" hash-for-method="addToBasket">addToBasket</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.endava.tests.SearchProductTest" hash-for-method="setPrices">setPrices</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_method_Suite" title="com.endava.tests.SearchProductTest" hash-for-method="applyFilter">applyFilter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Command_line_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_method_Suite" title="com.endava.tests.SearchProductTest" hash-for-method="applyFilter">applyFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Test_method_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -135,8 +150,44 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
-          <div class="suite-Command_line_suite-class-failed">
+        <div panel-name="suite-Test_method_Suite" class="panel Test_method_Suite">
+          <div class="suite-Test_method_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.endava.tests.SearchProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setPrices">
+                  </a> <!-- setPrices -->
+                  <span class="method-name">setPrices</span>
+                  <div class="stack-trace">java.lang.AssertionError: The price exceeds the limits expected [true] but found [false]
+	at com.endava.tests.SearchProductTest.setPrices(SearchProductTest.java:27)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setPrices">
+                  </a> <!-- setPrices -->
+                  <span class="method-name">setPrices</span>
+                  <div class="stack-trace">java.lang.AssertionError: The price exceeds the limits expected [true] but found [false]
+	at com.endava.tests.SearchProductTest.setPrices(SearchProductTest.java:27)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_method_Suite-class-failed -->
+          <div class="suite-Test_method_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
               <span class="class-name">com.endava.tests.BasketTest</span>
@@ -147,40 +198,20 @@
                   <a name="addToBasket">
                   </a> <!-- addToBasket -->
                   <span class="method-name">addToBasket</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=85.0.4183.83)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EN911371&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\LCASTI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 35e35ff05a5712ce6a77a2c6936ea2f3
-*** Element info: {Using=css selector, value=#gh-eb-Geo-a-default &gt; .gh-eb-Geo-txt}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at com.endava.pages.HomePage.changeLanguage(HomePage.java:25)
-	at com.endava.tests.BasketTest.addToBasket(BasketTest.java:33)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 41 stack frames
+                  <div class="stack-trace">java.lang.AssertionError: It was not possible to add the product to the cart expected [Nikon D5600 Digital SLR Camera Black + 3 Lens: 18-55mm VR Lens + 32GB Bundle] but found []
+	at com.endava.tests.BasketTest.addToBasket(BasketTest.java:34)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-failed -->
-          <div class="suite-Command_line_suite-class-skipped">
+          </div> <!-- suite-Test_method_Suite-class-failed -->
+          <div class="suite-Test_method_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.endava.tests.SearchProductTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -189,229 +220,154 @@ Session ID: 35e35ff05a5712ce6a77a2c6936ea2f3
                   <a name="applyFilter">
                   </a> <!-- applyFilter -->
                   <span class="method-name">applyFilter</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created
-from chrome not reachable
-  (Session info: chrome=85.0.4183.83)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EN911371&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x0034D383+3134339]
-	Ordinal0 [0x0023A171+2007409]
-	Ordinal0 [0x000DAD90+568720]
-	Ordinal0 [0x000D1364+529252]
-	Ordinal0 [0x000D19FC+530940]
-	Ordinal0 [0x000D2C15+535573]
-	Ordinal0 [0x000CDFC5+516037]
-	Ordinal0 [0x000DBF70+573296]
-	Ordinal0 [0x00081916+203030]
-	Ordinal0 [0x00080C1D+199709]
-	Ordinal0 [0x0007EB0B+191243]
-	Ordinal0 [0x00062E77+77431]
-	Ordinal0 [0x00063E3E+81470]
-	Ordinal0 [0x00063DC9+81353]
-	Ordinal0 [0x00250CD9+2100441]
-	GetHandleVerifier [0x004BB75A+1396954]
-	GetHandleVerifier [0x004BB3D9+1396057]
-	GetHandleVerifier [0x004C7126+1444518]
-	GetHandleVerifier [0x004BBCE8+1398376]
-	Ordinal0 [0x00247F51+2064209]
-	Ordinal0 [0x002522EB+2106091]
-	Ordinal0 [0x00252411+2106385]
-	Ordinal0 [0x002649C4+2181572]
-	BaseThreadInitThunk [0x766B6359+25]
-	RtlGetAppContainerNamedObjectPath [0x77957C24+228]
-	RtlGetAppContainerNamedObjectPath [0x77957BF4+180]
-	(No symbol) [0x00000000]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.endava.tests.SearchProductTest.setUp(SearchProductTest.java:25)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 45 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="setPrices">
-                  </a> <!-- setPrices -->
-                  <span class="method-name">setPrices</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created
-from chrome not reachable
-  (Session info: chrome=85.0.4183.83)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EN911371&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x0034D383+3134339]
-	Ordinal0 [0x0023A171+2007409]
-	Ordinal0 [0x000DAD90+568720]
-	Ordinal0 [0x000D1364+529252]
-	Ordinal0 [0x000D19FC+530940]
-	Ordinal0 [0x000D2C15+535573]
-	Ordinal0 [0x000CDFC5+516037]
-	Ordinal0 [0x000DBF70+573296]
-	Ordinal0 [0x00081916+203030]
-	Ordinal0 [0x00080C1D+199709]
-	Ordinal0 [0x0007EB0B+191243]
-	Ordinal0 [0x00062E77+77431]
-	Ordinal0 [0x00063E3E+81470]
-	Ordinal0 [0x00063DC9+81353]
-	Ordinal0 [0x00250CD9+2100441]
-	GetHandleVerifier [0x004BB75A+1396954]
-	GetHandleVerifier [0x004BB3D9+1396057]
-	GetHandleVerifier [0x004C7126+1444518]
-	GetHandleVerifier [0x004BBCE8+1398376]
-	Ordinal0 [0x00247F51+2064209]
-	Ordinal0 [0x002522EB+2106091]
-	Ordinal0 [0x00252411+2106385]
-	Ordinal0 [0x002649C4+2181572]
-	BaseThreadInitThunk [0x766B6359+25]
-	RtlGetAppContainerNamedObjectPath [0x77957C24+228]
-	RtlGetAppContainerNamedObjectPath [0x77957BF4+180]
-	(No symbol) [0x00000000]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.endava.tests.SearchProductTest.setUp(SearchProductTest.java:25)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 45 stack frames
-</div> <!-- stack-trace -->
+                  <a name="applyFilter">
+                  </a> <!-- applyFilter -->
+                  <span class="method-name">applyFilter</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-skipped -->
-        </div> <!-- panel Command_line_suite -->
-        <div panel-name="test-xml-Command_line_suite" class="panel">
+          </div> <!-- suite-Test_method_Suite-class-passed -->
+          <div class="suite-Test_method_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.endava.tests.BasketTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToBasket">
+                  </a> <!-- addToBasket -->
+                  <span class="method-name">addToBasket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_method_Suite-class-passed -->
+        </div> <!-- panel Test_method_Suite -->
+        <div panel-name="test-xml-Test_method_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\lcastillo\eclipse-workspace\Ebay-challenge\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Command line test&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Test-method Suite&quot; parallel=&quot;classes&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;FirefoxTests&quot; parallel=&quot;classes&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Firefox&quot;/&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.endava.tests.*&quot;/&gt;
+    &lt;/packages&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.endava.tests.BasicTest&quot;/&gt;
       &lt;class name=&quot;com.endava.tests.BasketTest&quot;/&gt;
       &lt;class name=&quot;com.endava.tests.SearchProductTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Command line test --&gt;
-&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTests --&gt;
+  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;ChromeTests&quot; parallel=&quot;classes&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.endava.tests.*&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.endava.tests.BasicTest&quot;/&gt;
+      &lt;class name=&quot;com.endava.tests.BasketTest&quot;/&gt;
+      &lt;class name=&quot;com.endava.tests.SearchProductTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTests --&gt;
+&lt;/suite&gt; &lt;!-- Test-method Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Command_line_suite" class="panel">
+        <div panel-name="testlist-Test_method_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Command line suite</span>
+            <span class="header-content">Tests for Test-method Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (2 classes)</span>
+                <span class="test-name">FirefoxTests (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">ChromeTests (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Command_line_suite" class="panel">
+        <div panel-name="group-Test_method_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Command line suite</span>
+            <span class="header-content">Groups for Test-method Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Command_line_suite" class="panel">
+        <div panel-name="times-Test_method_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Command line suite</span>
+            <span class="header-content">Times for Test-method Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Command_line_suite');
-function tableData_Command_line_suite() {
+suiteTableInitFunctions.push('tableData_Test_method_Suite');
+function tableData_Test_method_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addToBasket')
 data.setCell(0, 2, 'com.endava.tests.BasketTest')
-data.setCell(0, 3, 230);
+data.setCell(0, 3, 14572);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'applyFilter')
-data.setCell(1, 2, 'com.endava.tests.SearchProductTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'addToBasket')
+data.setCell(1, 2, 'com.endava.tests.BasketTest')
+data.setCell(1, 3, 13281);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'setPrices')
+data.setCell(2, 1, 'applyFilter')
 data.setCell(2, 2, 'com.endava.tests.SearchProductTest')
-data.setCell(2, 3, 0);
-window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+data.setCell(2, 3, 11713);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'applyFilter')
+data.setCell(3, 2, 'com.endava.tests.SearchProductTest')
+data.setCell(3, 3, 10750);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'setPrices')
+data.setCell(4, 2, 'com.endava.tests.SearchProductTest')
+data.setCell(4, 3, 7096);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'setPrices')
+data.setCell(5, 2, 'com.endava.tests.SearchProductTest')
+data.setCell(5, 3, 5441);
+window.suiteTableData['Test_method_Suite']= { tableData: data, tableDiv: 'times-div-Test_method_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 230 ms</span>
-              <div id="times-div-Command_line_suite">
-              </div> <!-- times-div-Command_line_suite -->
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Test_method_Suite">
+              </div> <!-- times-div-Test_method_Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Command_line_suite" class="panel">
+        <div panel-name="reporter-Test_method_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Command line suite</span>
+            <span class="header-content">Reporter output for Test-method Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+        <div panel-name="ignored-methods-Test_method_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Command_line_suite" class="panel">
+        <div panel-name="chronological-Test_method_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -419,47 +375,115 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.endava.tests.BasketTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeTest</span>
+                <span class="method-name">setUp(Firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.endava.tests.SearchProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">applyFilter</span>
+                <span class="method-start">10726 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.endava.tests.BasketTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">addToBasket</span>
-                <span class="method-start">6188 ms</span>
+                <span class="method-start">11172 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.endava.tests.SearchProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">after</span>
-                <span class="method-start">6430 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22450 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.endava.tests.BasketTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">25756 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.endava.tests.SearchProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <span class="method-name">setUp(Firefox)</span>
+                <span class="method-start">26874 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">setUp</span>
-                <span class="method-start">7084 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">applyFilter</span>
-                <span class="method-start">21394 ms</span>
+                <span class="method-name">setPrices</span>
+                <span class="method-start">34423 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21395 ms</span>
+                <span class="method-start">39866 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">21396 ms</span>
+                <span class="method-name">setUp(Chrome)</span>
+                <span class="method-start">43683 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.endava.tests.BasketTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Chrome)</span>
+                <span class="method-start">43683 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.endava.tests.SearchProductTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <span class="method-name">applyFilter</span>
+                <span class="method-start">52057 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.endava.tests.BasketTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addToBasket</span>
+                <span class="method-start">53376 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.endava.tests.SearchProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">62808 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Chrome)</span>
+                <span class="method-start">64628 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.endava.tests.BasketTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">66658 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.endava.tests.SearchProductTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setPrices</span>
-                <span class="method-start">21396 ms</span>
+                <span class="method-start">72202 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21397 ms</span>
+                <span class="method-start">79299 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

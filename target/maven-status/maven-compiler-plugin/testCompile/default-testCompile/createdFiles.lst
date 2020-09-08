@@ -2,5 +2,7 @@ com\endava\pages\CartPage.class
 com\endava\pages\HomePage.class
 com\endava\pages\ResultsPage.class
 com\endava\tests\SearchProductTest.class
+com\endava\utils\DriverFactory.class
 com\endava\pages\ProductPage.class
 com\endava\tests\BasketTest.class
+com\endava\tests\BasicTest.class

@@ -1,10 +1,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Test-method Suite" parallel="classes" thread-count="2" >
-  <test name="Test-method test">
-    <classes>
-      <class name="com.endava.tests.SearchProductTest" />
-      <class name="com.endava.tests.BasketTest"  />
-    </classes>
+
+  <test name="FirefoxTests" >
+    <parameter name="browser" value="Firefox"></parameter>
+    <packages>
+      <package name="com.endava.tests.*"/>
+    </packages>
+  </test>
+  <test name="ChromeTests" >
+    <parameter name="browser" value="Chrome"></parameter>
+    <packages>
+      <package name="com.endava.tests.*"/>
+    </packages>
   </test>
 </suite>
 

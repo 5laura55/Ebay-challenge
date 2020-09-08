@@ -81,6 +81,8 @@ public class ResultsPage {
 		boolean rsp = true;
 
 		for (int i = 0; i < prices.length && rsp == true; i++) {
+			prices[i] = prices[i].replaceAll("\\$.","");
+			System.out.println(prices[i]);
 
 			prices[i] = prices[i].replace(" $", "").replace("COP", "").replace(",", "");
 			if (prices[i].contains("to")) {

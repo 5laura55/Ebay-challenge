@@ -2,30 +2,15 @@ package com.endava.tests;
 
 
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import com.endava.pages.HomePage;
 import com.endava.pages.ResultsPage;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+public class SearchProductTest extends  BasicTest{
 
-public class SearchProductTest {
-	private WebDriver driver;
-
-	@BeforeMethod
-	public void setUp() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.get("https://www.ebay.com/");
-
-	}
 
 	@Test
 	public void setPrices() {
@@ -39,7 +24,7 @@ public class SearchProductTest {
 
 		resultsPage.setRangePrices("100000", "300000");
 
-		Assert.assertTrue(resultsPage.arePricesCorrect(100000, 300000, resultsPage.getFirstThreePrices()));
+		Assert.assertTrue(resultsPage.arePricesCorrect(100000, 300000, resultsPage.getFirstThreePrices()),"The price exceeds the limits");
 
 	}
 
@@ -53,14 +38,10 @@ public class SearchProductTest {
 
 		ResultsPage resultsPage = PageFactory.initElements(driver, ResultsPage.class);
 		resultsPage.setAFilter("Condition", "New");
-		Assert.assertTrue(resultsPage.isFilterCorrect("New", resultsPage.getFirstThreeFilters()));
+		Assert.assertTrue(resultsPage.isFilterCorrect("New", resultsPage.getFirstThreeFilters()),"It was not possible to filter correctly");
 
 	}
 
-	@AfterMethod
-	public void tearDown() {
-		driver.quit();
 
-	}
 
 }

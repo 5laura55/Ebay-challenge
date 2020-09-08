@@ -8,219 +8,34 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Command line suite</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">21,440</td><td></td><td></td></tr>
+<tr><th colspan="8">Test-method Suite</th></tr>
+<tr><td><a href="#t0">FirefoxTests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">43,573</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">ChromeTests</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">36,809</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num attn">3</th><th class="num">80,382</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.endava.tests.SearchProductTest</td><td><a href="#m0">setUp</a></td><td rowspan="1">1599152616523</td><td rowspan="1">14306</td></tr><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.endava.tests.BasketTest</td><td><a href="#m1">addToBasket</a></td><td rowspan="1">1599152615627</td><td rowspan="1">230</td></tr><tr><th colspan="4">Command line test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">com.endava.tests.SearchProductTest</td><td><a href="#m2">setUp</a></td><td rowspan="1">1599152630835</td><td rowspan="1">-1599152630835</td></tr><tr class="skippedeven"><td><a href="#m3">tearDown</a></td><td rowspan="2">1599152630836</td><td rowspan="2">-1599152630836</td></tr><tr class="skippedeven"><td><a href="#m4">tearDown</a></td></tr><tr><th colspan="4">Command line test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.endava.tests.SearchProductTest</td><td><a href="#m5">applyFilter</a></td><td rowspan="1">1599152630833</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m6">setPrices</a></td><td rowspan="1">1599152630835</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test-method Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">FirefoxTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.endava.tests.BasketTest</td><td><a href="#m0">addToBasket</a></td><td rowspan="1">1599514480180</td><td rowspan="1">14572</td></tr><tr class="failedodd"><td rowspan="1">com.endava.tests.SearchProductTest</td><td><a href="#m1">setPrices</a></td><td rowspan="1">1599514503431</td><td rowspan="1">5441</td></tr><tr><th colspan="4">FirefoxTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.endava.tests.SearchProductTest</td><td><a href="#m2">applyFilter</a></td><td rowspan="1">1599514479734</td><td rowspan="1">11713</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">ChromeTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.endava.tests.SearchProductTest</td><td><a href="#m3">setPrices</a></td><td rowspan="1">1599514541210</td><td rowspan="1">7096</td></tr><tr><th colspan="4">ChromeTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.endava.tests.BasketTest</td><td><a href="#m4">addToBasket</a></td><td rowspan="1">1599514522384</td><td rowspan="1">13281</td></tr><tr class="passedodd"><td rowspan="1">com.endava.tests.SearchProductTest</td><td><a href="#m5">applyFilter</a></td><td rowspan="1">1599514521065</td><td rowspan="1">10750</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">com.endava.tests.SearchProductTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created
-from chrome not reachable
-  (Session info: chrome=85.0.4183.83)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EN911371&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x0034D383+3134339]
-	Ordinal0 [0x0023A171+2007409]
-	Ordinal0 [0x000DAD90+568720]
-	Ordinal0 [0x000D1364+529252]
-	Ordinal0 [0x000D19FC+530940]
-	Ordinal0 [0x000D2C15+535573]
-	Ordinal0 [0x000CDFC5+516037]
-	Ordinal0 [0x000DBF70+573296]
-	Ordinal0 [0x00081916+203030]
-	Ordinal0 [0x00080C1D+199709]
-	Ordinal0 [0x0007EB0B+191243]
-	Ordinal0 [0x00062E77+77431]
-	Ordinal0 [0x00063E3E+81470]
-	Ordinal0 [0x00063DC9+81353]
-	Ordinal0 [0x00250CD9+2100441]
-	GetHandleVerifier [0x004BB75A+1396954]
-	GetHandleVerifier [0x004BB3D9+1396057]
-	GetHandleVerifier [0x004C7126+1444518]
-	GetHandleVerifier [0x004BBCE8+1398376]
-	Ordinal0 [0x00247F51+2064209]
-	Ordinal0 [0x002522EB+2106091]
-	Ordinal0 [0x00252411+2106385]
-	Ordinal0 [0x002649C4+2181572]
-	BaseThreadInitThunk [0x766B6359+25]
-	RtlGetAppContainerNamedObjectPath [0x77957C24+228]
-	RtlGetAppContainerNamedObjectPath [0x77957BF4+180]
-	(No symbol) [0x00000000]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.endava.tests.SearchProductTest.setUp(SearchProductTest.java:25)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 45 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.endava.tests.BasketTest#addToBasket</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=85.0.4183.83)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EN911371&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\LCASTI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 35e35ff05a5712ce6a77a2c6936ea2f3
-*** Element info: {Using=css selector, value=#gh-eb-Geo-a-default &gt; .gh-eb-Geo-txt}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at com.endava.pages.HomePage.changeLanguage(HomePage.java:25)
-	at com.endava.tests.BasketTest.addToBasket(BasketTest.java:33)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 41 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.endava.tests.SearchProductTest#setUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.endava.tests.SearchProductTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.endava.tests.SearchProductTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.endava.tests.SearchProductTest#applyFilter</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created
-from chrome not reachable
-  (Session info: chrome=85.0.4183.83)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EN911371&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x0034D383+3134339]
-	Ordinal0 [0x0023A171+2007409]
-	Ordinal0 [0x000DAD90+568720]
-	Ordinal0 [0x000D1364+529252]
-	Ordinal0 [0x000D19FC+530940]
-	Ordinal0 [0x000D2C15+535573]
-	Ordinal0 [0x000CDFC5+516037]
-	Ordinal0 [0x000DBF70+573296]
-	Ordinal0 [0x00081916+203030]
-	Ordinal0 [0x00080C1D+199709]
-	Ordinal0 [0x0007EB0B+191243]
-	Ordinal0 [0x00062E77+77431]
-	Ordinal0 [0x00063E3E+81470]
-	Ordinal0 [0x00063DC9+81353]
-	Ordinal0 [0x00250CD9+2100441]
-	GetHandleVerifier [0x004BB75A+1396954]
-	GetHandleVerifier [0x004BB3D9+1396057]
-	GetHandleVerifier [0x004C7126+1444518]
-	GetHandleVerifier [0x004BBCE8+1398376]
-	Ordinal0 [0x00247F51+2064209]
-	Ordinal0 [0x002522EB+2106091]
-	Ordinal0 [0x00252411+2106385]
-	Ordinal0 [0x002649C4+2181572]
-	BaseThreadInitThunk [0x766B6359+25]
-	RtlGetAppContainerNamedObjectPath [0x77957C24+228]
-	RtlGetAppContainerNamedObjectPath [0x77957BF4+180]
-	(No symbol) [0x00000000]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.endava.tests.SearchProductTest.setUp(SearchProductTest.java:25)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 45 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.endava.tests.SearchProductTest#setPrices</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created
-from chrome not reachable
-  (Session info: chrome=85.0.4183.83)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EN911371&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x0034D383+3134339]
-	Ordinal0 [0x0023A171+2007409]
-	Ordinal0 [0x000DAD90+568720]
-	Ordinal0 [0x000D1364+529252]
-	Ordinal0 [0x000D19FC+530940]
-	Ordinal0 [0x000D2C15+535573]
-	Ordinal0 [0x000CDFC5+516037]
-	Ordinal0 [0x000DBF70+573296]
-	Ordinal0 [0x00081916+203030]
-	Ordinal0 [0x00080C1D+199709]
-	Ordinal0 [0x0007EB0B+191243]
-	Ordinal0 [0x00062E77+77431]
-	Ordinal0 [0x00063E3E+81470]
-	Ordinal0 [0x00063DC9+81353]
-	Ordinal0 [0x00250CD9+2100441]
-	GetHandleVerifier [0x004BB75A+1396954]
-	GetHandleVerifier [0x004BB3D9+1396057]
-	GetHandleVerifier [0x004C7126+1444518]
-	GetHandleVerifier [0x004BBCE8+1398376]
-	Ordinal0 [0x00247F51+2064209]
-	Ordinal0 [0x002522EB+2106091]
-	Ordinal0 [0x00252411+2106385]
-	Ordinal0 [0x002649C4+2181572]
-	BaseThreadInitThunk [0x766B6359+25]
-	RtlGetAppContainerNamedObjectPath [0x77957C24+228]
-	RtlGetAppContainerNamedObjectPath [0x77957BF4+180]
-	(No symbol) [0x00000000]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.endava.tests.SearchProductTest.setUp(SearchProductTest.java:25)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 45 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>FirefoxTests</h2><h3 id="m0">com.endava.tests.BasketTest#addToBasket</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: It was not possible to add the product to the cart expected [Nikon D5600 Digital SLR Camera Black + 3 Lens: 18-55mm VR Lens + 32GB Bundle] but found []
+	at com.endava.tests.BasketTest.addToBasket(BasketTest.java:34)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.endava.tests.SearchProductTest#setPrices</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The price exceeds the limits expected [true] but found [false]
+	at com.endava.tests.SearchProductTest.setPrices(SearchProductTest.java:27)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.endava.tests.SearchProductTest#applyFilter</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ChromeTests</h2><h3 id="m3">com.endava.tests.SearchProductTest#setPrices</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The price exceeds the limits expected [true] but found [false]
+	at com.endava.tests.SearchProductTest.setPrices(SearchProductTest.java:27)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.endava.tests.BasketTest#addToBasket</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.endava.tests.SearchProductTest#applyFilter</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

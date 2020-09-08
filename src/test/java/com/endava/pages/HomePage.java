@@ -25,7 +25,7 @@ public class HomePage {
 
 	public void changeLanguage() {
 		worldIcon.click();
-		wait(2);
+		wait(3);
 		englishLink.click();
 		wait(2);
 	}

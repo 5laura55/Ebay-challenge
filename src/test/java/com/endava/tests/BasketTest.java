@@ -1,31 +1,20 @@
 package com.endava.tests;
 
+
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import com.endava.pages.CartPage;
 import com.endava.pages.HomePage;
 import com.endava.pages.ProductPage;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BasketTest {
-	private WebDriver driver;
 
-	@BeforeMethod
-	public void beforeTest() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.get("https://www.ebay.com/");
+public class BasketTest extends BasicTest{
 
-	}
 
 	@Test
 	public void addToBasket() {
@@ -39,17 +28,17 @@ public class BasketTest {
 		String askedProductname = productPage.getTitle();
 		productPage.addToCart();
 		CartPage cartPage = PageFactory.initElements(driver, CartPage.class);
-		wait(2);
+		wait(30);
 
 		String productNameInTheBasket = cartPage.getTitle();
-		Assert.assertEquals(productNameInTheBasket, askedProductname);
+		Assert.assertEquals(productNameInTheBasket, askedProductname,"It was not possible to add the product to the cart");
 
 	}
 	public void wait(int seconds){
 		driver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
 	}
-	@AfterMethod
-	public void after() {
-		driver.quit();
-	}
+
+
+
+
 }
